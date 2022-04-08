@@ -15,3 +15,4 @@ jobs:
         uses: andymckay/labeler@master
         with:
           add-labels: "ci-disabled"
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
