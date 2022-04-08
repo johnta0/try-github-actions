@@ -9,4 +9,4 @@ jobs:
       - name: Label pull request
         uses: andymckay/labeler@master
         with:
-          add-labels: "ci-disabled"
+          add-labels: 'ci-disabled'
