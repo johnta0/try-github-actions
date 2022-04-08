@@ -1,4 +1,4 @@
-name: Add label
+name: Label PR
 on:
   pull_request:
     types:
@@ -9,9 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       pull-requests: write
-    
     steps:
-      - name: Label pull requests
+      - name: Label pull request
         uses: andymckay/labeler@master
         with:
           add-labels: "ci-disabled"
