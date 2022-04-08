@@ -14,4 +14,4 @@ jobs:
       - name: Label issues
         uses: andymckay/labeler@master
         with:
-          add-labels: 'ci-disabled'
+          add-labels: "ci-disabled"
