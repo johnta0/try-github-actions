@@ -1,15 +1,12 @@
 name: Label PR
 on:
   pull_request:
-    types: [opened, reopoened]
+    types: [opened, reopened]
 jobs:
-  add_label_to_issues:
+  label_pr:
     runs-on: ubuntu-latest
-    permissions:
-      pull-requests: write
     steps:
       - name: Label pull request
         uses: andymckay/labeler@master
         with:
           add-labels: "ci-disabled"
-          repo-token: "${{ secrets.GITHUB_TOKEN }}"
