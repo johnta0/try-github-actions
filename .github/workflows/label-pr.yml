@@ -1,7 +1,9 @@
 name: Add label
 on:
   pull_request:
-    types: [opened]
+    types:
+      - opened
+      - reopoened
 jobs:
   add_label_to_issues:
     runs-on: ubuntu-latest
