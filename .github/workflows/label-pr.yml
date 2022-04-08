@@ -6,7 +6,7 @@ jobs:
   label_pr:
     runs-on: ubuntu-latest
     permissions:
-      pull-requests: write
+      issues: write
     steps:
       - name: Label pull request
         uses: andymckay/labeler@master
