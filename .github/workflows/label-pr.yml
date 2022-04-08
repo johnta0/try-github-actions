@@ -11,7 +11,7 @@ jobs:
       pull-requests: write
     
     steps:
-      - name: Label issues
+      - name: Label pull requests
         uses: andymckay/labeler@master
         with:
           add-labels: "ci-disabled"
