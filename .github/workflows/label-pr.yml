@@ -13,3 +13,7 @@ jobs:
         uses: andymckay/labeler@master
         with:
           add-labels: 'ci-disabled'
+      - name: Set the job status failed
+        uses: actions/github-script@v6
+        with:
+          script: core.setFailed('backend test is disabled.')
