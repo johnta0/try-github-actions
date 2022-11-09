@@ -12,3 +12,4 @@ jobs:
     steps:
       - name: echo
         run: echo 'Hello world'
+      - run: echo ${{ github.event.workflow_dispatch.inputs.name }}
