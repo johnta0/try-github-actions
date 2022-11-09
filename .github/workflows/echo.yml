@@ -11,5 +11,5 @@ jobs:
     steps:
       - name: echo
         env:
-          event_type: github.event.number
+          event_type: ${{ github.event.number }}
         run: echo 'Hello world' && echo $event_type
