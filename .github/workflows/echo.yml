@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: echo
-        run: echo 'Hello world' && echo ${{ github.event.workflow_dispatch.workflow }}
+        run: echo 'Hello world' && echo ${{ github.event.workflow }}
