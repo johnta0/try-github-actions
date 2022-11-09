@@ -8,6 +8,7 @@ on:
 jobs:
   echo:
     runs-on: ubuntu-latest
+    if: github.event == 'workflow_dispatch'
     steps:
       - name: echo
         run: echo 'Hello world'
