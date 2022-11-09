@@ -10,4 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: echo
-        run: echo 'Hello world' && echo $github.event.action
+        env:
+          event_type: github.event.number
+        run: echo 'Hello world' && echo $event_type
